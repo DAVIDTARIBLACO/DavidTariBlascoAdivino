@@ -6,9 +6,9 @@ public class Main {
 
     public static void main(String[] args) {
         int n = 0, cont = 0;
-        int max = 50;
-        int min = 10;
-        int x = (int)(500*Math.random());
+        int min = 10, max = 50;
+        int x = (int)(Math.random()*(max - min)) + min;
+        System.out.println(x);
         Scanner sc = new Scanner(System.in);
         do {
             System.out.println("\n Introduce el valor de X:");
@@ -20,7 +20,8 @@ public class Main {
             }
             cont++;
         } while(n != x);
-        System.out.println("Ouh yeah! Acertaste! Aunque después de " + cont + " intentos, not bad :)");
+        String singularPlural = cont > 1 ? " intentos," : " intento,";
+        System.out.println("Ouh yeah! Acertaste! Aunque después de " + cont + singularPlural + " not bad :)");
         sc.close();
     }
 }
