@@ -8,7 +8,7 @@ public class Main {
         int n = 0, cont = 0;
         int min = 10, max = 50;
         int x = (int)(Math.random()*(max - min)) + min;
-        System.out.println(x);
+        //System.out.println(x);
         Scanner sc = new Scanner(System.in);
         do {
             System.out.println("\n Introduce el valor de X:");
