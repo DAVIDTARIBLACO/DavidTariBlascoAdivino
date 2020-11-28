@@ -2,6 +2,8 @@ package com.daw;
 
 import java.util.Scanner;
 
+/*Adolfo Sobrino : ninguna correción hecha*/
+
 public class Main {
 
     public static void main(String[] args) {
